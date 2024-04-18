@@ -26,24 +26,14 @@ export default function Navlinks({ user }: NavlinksProps) {
             Pricing
           </Link>
           {user && (
-            <Link href="/account" className={s.link}>
+            <><Link href="/account" className={s.link}>
               Account
-            </Link>
-          )}
-          {user && (
-            <Link href="/generate" className={s.link}>
-              Generate
-            </Link>
-          )}
-          {user && (
-            <Link href="/generaterecap" className={s.link}>
-              Generate Recap
-            </Link>
-          )}
-          {user && (
-            <Link href="/draw" className={s.link}>
-              Draw
-            </Link>
+            </Link><Link href="/private" className={s.link}>
+                Draw a UI
+              </Link>
+              <Link href="/generate" className={s.link}>
+                Generate
+              </Link></>
           )}
         </nav>
       </div>
