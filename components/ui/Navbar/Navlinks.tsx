@@ -30,6 +30,21 @@ export default function Navlinks({ user }: NavlinksProps) {
               Account
             </Link>
           )}
+          {user && (
+            <Link href="/generate" className={s.link}>
+              Generate
+            </Link>
+          )}
+          {user && (
+            <Link href="/generaterecap" className={s.link}>
+              Generate Recap
+            </Link>
+          )}
+          {user && (
+            <Link href="/draw" className={s.link}>
+              Draw
+            </Link>
+          )}
         </nav>
       </div>
       <div className="flex justify-end space-x-8">
